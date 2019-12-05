@@ -24,6 +24,9 @@ const connect = function(data) {
 
   conn.on('data', (data) => {
     console.log(data);
+    if (data.includes('you ded')){
+      process.exit();
+    }
     
   });
   
